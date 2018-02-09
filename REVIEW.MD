@@ -11,7 +11,7 @@ Les scatterplot ne nous paraissent pas forcément très clairs et c'est bien que
 Une des visualisations non retenues proposait la possibilité de faire varier le nombre de plantes à mettre dans un potager et de pouvoir les associés facilement pour savoir si leur association fonctionnerait. Serait-ce possible d'ajouter à votre visualisation la possibilité de mettre les nutriments dont nous disposons pour voir combien de plantes de chaque espèce peuvent pousser dans notre potager ?
 
 ## Faisabilité
-
+On ne peut pas comparer plusieurs "species" dans une facon détaillée au même temps.
 La représentation du stacked bar chart et la transition vers un pie chart nous parait être un challenge atteignable pour vous. C'est faisable et ce sera efficace !
 
 ## En bref
