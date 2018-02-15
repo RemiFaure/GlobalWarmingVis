@@ -1,37 +1,206 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 <head>
-  <meta charset="utf-8">
-  <script src="data/d3/d3.js"></script>
-  <style>
-    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
-  </style>
-</head>
-
-<body>
+<title>Simple Radar Chart</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head><body><h1>Simple Radar Chart</h1>
+<div id="viz">
+</div>
 <script>
-  var dataset;
 
-  d3.csv("data/GlobalLandTemperaturesByMajorCity.csv", function(err, data){
+  d3.json("temp_france.json",function(data){
+   
+  dataset=data;
+  
+var series, 
+    months,
+    minVal,
+    maxVal,
+    w = 400,
+    h = 400,
+    vizPadding = {
+        top: 10,
+        right: 0,
+        bottom: 15,
+        left: 0
+    },
+    radius,
+    radiusLength,
+    color;
 
-    if (err){
-      console.log("ERREUR !", err);
-    } else {
-      console.log("données chargées");
+
+    series = [[]];
+  	nbannee=Math.floor(dataset.length/12);
+  	annee=dataset[0].dt[2].concat(dataset[0].dt[3]);
+		
+
+    months = [1,2,3,4,5,6,7,8,9,10,11,12];
+  
+    for (i=0; i<dataset.length; i+=1) {
+      anneeactuelle=dataset[i].dt[2].concat(dataset[i].dt[3]);
+      if (anneeactuelle!=annee){
+        series.push([]);
+        annee=dataset[i].dt[2].concat(dataset[i].dt[3]);
+      }
+      series[series.length-1].push(dataset[i].AverageTemperature) 
+    }	
+	
+
+  
+  	mergedArr = series[0];
+  	for (i=1; i<series.length; i+=1){
+      mergedArr = mergedArr.concat(series[i]);
     }
 
+    minVal = d3.min(mergedArr);
+    maxVal = d3.max(mergedArr);
+    //give 25% of range as buffer to top
+    maxVal = maxVal + ((maxVal - minVal) * 0.25);
+    minVal = 0;
 
-    width = 700;
-    height = 500;
-    var svg = d3.select("body")
-    .append("svg")
-    .attr("width", width)
-    .attr("height",height)
-    .style("background", "rgb(0,0,60)")
-    .attr("transform","translate(125,0)");
+    //to complete the radial lines
+    for (i = 0; i < series.length; i += 1) {
+        series[i].push(series[i][0]);
+    }
+
+    var viz = d3.select("#viz")
+        .append('svg')
+        .attr('width', w)
+        .attr('height', h)
+        .attr('class', 'vizSvg');
     
-    
-  });
+    vizBody = viz.append("g")
+        .attr('id', 'contenant');
+
   
+  var heightCircleConstraint,
+      widthCircleConstraint,
+      circleConstraint,
+      centerXPos,
+      centerYPos;
 
+  //need a circle so find constraining dimension
+  heightCircleConstraint = h - vizPadding.top - vizPadding.bottom;
+  widthCircleConstraint = w - vizPadding.left - vizPadding.right;
+  circleConstraint = d3.min([
+      heightCircleConstraint, widthCircleConstraint]);
+
+  radius = d3.scaleLinear().domain([minVal, maxVal])
+      .range([0, (circleConstraint / 2)]);
+  radiusLength = radius(maxVal);
+
+  //attach everything to the group that is centered around middle
+  centerXPos = widthCircleConstraint / 2 + vizPadding.left;
+  centerYPos = heightCircleConstraint / 2 + vizPadding.top;
+
+  vizBody.attr("transform",
+      "translate(" + centerXPos + ", " + centerYPos + ")");
+
+
+  var radialTicks = radius.ticks(5),
+      i,
+      circleAxes,
+      lineAxes;
+
+  vizBody.selectAll('.circle-ticks').remove();
+  vizBody.selectAll('.line-ticks').remove();
+
+  circleAxes = vizBody.selectAll('.circle-ticks')
+      .data(radialTicks)
+      .enter().append('g')
+      .attr("class", "circle-ticks");
+
+  circleAxes.append("circle")
+      .attr("r", function (d, i) {
+          return radius(d);
+      })
+      .attr("class", "circle")
+      .style("stroke", "#CCC")
+      .style("fill", "none");
+
+  circleAxes.append("text")
+      .attr("text-anchor", "middle")
+      .attr("dy", function (d) {
+          return -1 * radius(d);
+      })
+      .text(String);
+
+  lineAxes = vizBody.selectAll('.line-ticks')
+      .data(months)
+      .enter().append('g')
+      .attr("transform", function (d, i) {
+          return "rotate(" + ((i / months.length * 360) - 90) +
+              ")translate(" + radius(maxVal) + ")";
+      })
+      .attr("class", "line-ticks");
+
+  lineAxes.append('line')
+      .attr("x2", -1 * radius(maxVal))
+      .style("stroke", "#CCC")
+      .style("fill", "none");
+
+  lineAxes.append('svg:text')
+      .text(String)
+      .attr("text-anchor", "middle")
+      .attr("transform", function (d, i) {
+          return (i / months.length * 360) < 180 ? null : "rotate(180)";
+      });
+
+
+  var groups,
+      lines,
+      linesToUpdate;
+	
+  	var radialLineGenerator=d3.radialLine();
+  
+  radialLineGenerator
+    		.radius(function (d) {
+          return radius(d)})
+    		.angle(function (d, i) {
+          if (i === 12) {
+              i = 0;
+          } //close the line
+          return (i / 12) * 2 * Math.PI;
+      });
+  
+  
+   color=d3.scaleLinear()
+   		.domain([0,series.length])
+      .range(['blue','red']);
+  
+  op= d3.scaleLinear().domain([0,series.length]).range([0.1,1])
+  groups = vizBody.selectAll('.series')
+      .data(series);
+  groups.enter().append("g")
+      .attr('class', 'series')
+      .style('fill', function (d, i) {
+    			console.log(i);
+          return color(i);
+      })
+      .style('stroke', function (d, i) {
+          return color(i);
+      })
+  		.style('opacity',function(d, i) {
+    			return op(i);
+  })
+  		.append('path')
+  		.attr("class", "line")
+  		.style("stroke-width", 1)
+      .style("fill", "none")
+  		.attr("d", radialLineGenerator);
+
+  //groups.exit().remove();
+
+
+
+
+})
+
+
+
+  
+  
 </script>
 </body>
+</html>
