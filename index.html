@@ -45,9 +45,9 @@
 
 
 		    		
-		ListePays=['France', 'Spain', 'Sweden', 'USA','Canada','Argentina','Brazil','South Africa','Algeria','Madagascar','Australia','China','Russia','India'];
+		ListePays=['France', 'Spain', 'Sweden', 'USA','Canada','Argentina','Brazil','South_Africa','Algeria','Madagascar','Australia','China','Russia','India'];
 
-		var gcanada = svg.append('g').attr('class','Canada').attr("transform","translate("+centerXPos+","+centerYPos+")");
+		var gcanada = svg.append('g').attr('class','Canada').attr("transform","translate("+centerXPos+","+centerYPos+")").on("mouseover", function(){ graphe(d3.select(this).attr("class")) });
 		var gusa = svg.append('g').attr('class','USA').attr("transform","translate("+(w+centerXPos)+","+centerYPos+")");
 		var gspain = svg.append('g').attr('class','Spain').attr("transform","translate("+(2*w+centerXPos)+","+centerYPos+")");
 		var gfrance = svg.append('g').attr('class','France').attr("transform","translate("+(3*w+centerXPos)+","+centerYPos+")");
@@ -58,11 +58,11 @@
 		var gindia = svg.append('g').attr('class','India').attr("transform","translate("+(4*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
 		var gchina = svg.append('g').attr('class','China').attr("transform","translate("+(5*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
 		var gargentina = svg.append('g').attr('class','Argentina').attr("transform","translate("+(centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
-		var gsouthafrica = svg.append('g').attr('class','South Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
+		var gsouthafrica = svg.append('g').attr('class','South_Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
 		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
 		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
 
-		//var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+3*w+','+2*h+')').attr("width",2*w).attr("height",2*h).style('fill','blue');
+		var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+3*w+','+2*h+')').attr("width",2*w).attr("height",2*h).style('fill','blue');
 
 		//vizBody.attr("transform","translate(" + centerXPos + ", " + centerYPos + ")");
 		var posx = -Math.floor('Canada'.length/2)*7;
@@ -88,8 +88,8 @@
 		gchina.append("text").attr('transform',"translate("+posx+","+posy+")").text('China');
 		posx = -Math.floor('Argentina'.length/2)*7;
 		gargentina.append("text").attr('transform',"translate("+posx+","+posy+")").text('Argentina');
-		posx = -Math.floor('South Africa'.length/2)*7;
-		gsouthafrica.append("text").attr('transform',"translate("+posx+","+posy+")").text('South Africa');
+		posx = -Math.floor('South_Africa'.length/2)*7;
+		gsouthafrica.append("text").attr('transform',"translate("+posx+","+posy+")").text('South_Africa');
 		posx = -Math.floor('Madagascar'.length/2)*7;
 		gmadagascar.append("text").attr('transform',"translate("+posx+","+posy+")").text('Madagascar');
 		posx = -Math.floor('Australia'.length/2)*7;
@@ -253,15 +253,19 @@
 
 		}
 
-		/*function graphe(pays){
+		function graphe(pays){
 			d3.csv("data/BD/"+pays,function(data){
-			  	var dataset=data;
+				dataset=data
+			  	xscale = d3.scaleTime().domain(dataset[0].dt,dataset[dataset.length-1].dt).range(20,2*w-20);
+			  	minVal=d3.min(dataset, function(d){return d.AverageTemperature});
+			  	maxVal=d3.max(dataset, function(d){return d.AverageTemperature});
+			  	yscale = d3.scaleLinear().domain([minVal,maxVal]).range(20,2*h-20);
+			  	var line=d3.line()
+			  				.x(function(d){return xscale(d.dt)})
+			  				.y(function(d){return yscale(d.AverageTemperature)});
+			  	ggros.append("path").datum(dataset).attr("d", line);
 
-			  	xscale = d3.scaleLinear().domain()
-			  	var line=d3.line
-			  				.x(function(d){return d.dt})
-
-		}*/
+		});}
 
 
 		  
