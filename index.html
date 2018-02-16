@@ -1,206 +1,260 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-<title>Simple Radar Chart</title>
-<link rel="stylesheet" href="style.css"/>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-</head><body><h1>Simple Radar Chart</h1>
-<div id="viz">
-</div>
-<script>
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Radar Chart</title>
+		<link rel="stylesheet" href="style.css"/>
+		 <style>
+    		body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  		</style>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+	</head>
+	<body>
+	<script>
+		var width = 1300;
+		var height = 700;
+		var w = 220;
+		var h = 220;
+		var svg = d3.select('body')
+		    .append('svg')
+		    .attr('width', 1300)
+		    .attr('height', 700)
+		    .attr('class', 'svg');
 
-  d3.json("data/temp_france.json",function(data){
-   
-  dataset=data;
-  
-var series, 
-    months,
-    minVal,
-    maxVal,
-    w = 400,
-    h = 400,
-    vizPadding = {
-        top: 10,
-        right: 0,
-        bottom: 15,
-        left: 0
-    },
-    radius,
-    radiusLength,
-    color;
+		var heightCircleConstraint,
+			widthCircleConstraint,
+			circleConstraint,
+			centerXPos,
+			centerYPos,			    
+			vizPadding = {
+			        top: 10,
+			        right: 0,
+			        bottom: 15,
+			        left: 0
+			    };
 
+		//need a circle so find constraining dimension
+		heightCircleConstraint = h - vizPadding.top - vizPadding.bottom;
+		widthCircleConstraint = w - vizPadding.left - vizPadding.right;
+		circleConstraint = d3.min([heightCircleConstraint, widthCircleConstraint]);
 
-    series = [[]];
-  	nbannee=Math.floor(dataset.length/12);
-  	annee=dataset[0].dt[2].concat(dataset[0].dt[3]);
-		
-
-    months = [1,2,3,4,5,6,7,8,9,10,11,12];
-  
-    for (i=0; i<dataset.length; i+=1) {
-      anneeactuelle=dataset[i].dt[2].concat(dataset[i].dt[3]);
-      if (anneeactuelle!=annee){
-        series.push([]);
-        annee=dataset[i].dt[2].concat(dataset[i].dt[3]);
-      }
-      series[series.length-1].push(dataset[i].AverageTemperature) 
-    }	
-	
-
-  
-  	mergedArr = series[0];
-  	for (i=1; i<series.length; i+=1){
-      mergedArr = mergedArr.concat(series[i]);
-    }
-
-    minVal = d3.min(mergedArr);
-    maxVal = d3.max(mergedArr);
-    //give 25% of range as buffer to top
-    maxVal = maxVal + ((maxVal - minVal) * 0.25);
-    minVal = 0;
-
-    //to complete the radial lines
-    for (i = 0; i < series.length; i += 1) {
-        series[i].push(series[i][0]);
-    }
-
-    var viz = d3.select("#viz")
-        .append('svg')
-        .attr('width', w)
-        .attr('height', h)
-        .attr('class', 'vizSvg');
-    
-    vizBody = viz.append("g")
-        .attr('id', 'contenant');
-
-  
-  var heightCircleConstraint,
-      widthCircleConstraint,
-      circleConstraint,
-      centerXPos,
-      centerYPos;
-
-  //need a circle so find constraining dimension
-  heightCircleConstraint = h - vizPadding.top - vizPadding.bottom;
-  widthCircleConstraint = w - vizPadding.left - vizPadding.right;
-  circleConstraint = d3.min([
-      heightCircleConstraint, widthCircleConstraint]);
-
-  radius = d3.scaleLinear().domain([minVal, maxVal])
-      .range([0, (circleConstraint / 2)]);
-  radiusLength = radius(maxVal);
-
-  //attach everything to the group that is centered around middle
-  centerXPos = widthCircleConstraint / 2 + vizPadding.left;
-  centerYPos = heightCircleConstraint / 2 + vizPadding.top;
-
-  vizBody.attr("transform",
-      "translate(" + centerXPos + ", " + centerYPos + ")");
+		    //attach everything to the group that is centered around middle
+		centerXPos = widthCircleConstraint / 2 + vizPadding.left;
+		centerYPos = heightCircleConstraint / 2 + vizPadding.top;
 
 
-  var radialTicks = radius.ticks(5),
-      i,
-      circleAxes,
-      lineAxes;
+		    		
+		ListePays=['France', 'Spain', 'Sweden', 'USA','Canada','Argentina','Brazil','South Africa','Algeria','Madagascar','Australia','China','Russia','India'];
 
-  vizBody.selectAll('.circle-ticks').remove();
-  vizBody.selectAll('.line-ticks').remove();
+		var gcanada = svg.append('g').attr('class','Canada').attr("transform","translate("+centerXPos+","+centerYPos+")");
+		var gusa = svg.append('g').attr('class','USA').attr("transform","translate("+(w+centerXPos)+","+centerYPos+")");
+		var gspain = svg.append('g').attr('class','Spain').attr("transform","translate("+(2*w+centerXPos)+","+centerYPos+")");
+		var gfrance = svg.append('g').attr('class','France').attr("transform","translate("+(3*w+centerXPos)+","+centerYPos+")");
+		var gsweden = svg.append('g').attr('class','Sweden').attr("transform","translate("+(4*w+centerXPos)+","+centerYPos+")");
+		var grussia = svg.append('g').attr('class','Russia').attr("transform","translate("+(5*w+centerXPos)+","+centerYPos+")");
+		var gbrazil = svg.append('g').attr('class','Brazil').attr("transform","translate("+(0*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
+		var galgeria = svg.append('g').attr('class','Algeria').attr("transform","translate("+(w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
+		var gindia = svg.append('g').attr('class','India').attr("transform","translate("+(4*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
+		var gchina = svg.append('g').attr('class','China').attr("transform","translate("+(5*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
+		var gargentina = svg.append('g').attr('class','Argentina').attr("transform","translate("+(centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
+		var gsouthafrica = svg.append('g').attr('class','South Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
+		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
+		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
 
-  circleAxes = vizBody.selectAll('.circle-ticks')
-      .data(radialTicks)
-      .enter().append('g')
-      .attr("class", "circle-ticks");
-
-  circleAxes.append("circle")
-      .attr("r", function (d, i) {
-          return radius(d);
-      })
-      .attr("class", "circle")
-      .style("stroke", "#CCC")
-      .style("fill", "none");
-
-  circleAxes.append("text")
-      .attr("text-anchor", "middle")
-      .attr("dy", function (d) {
-          return -1 * radius(d);
-      })
-      .text(String);
-
-  lineAxes = vizBody.selectAll('.line-ticks')
-      .data(months)
-      .enter().append('g')
-      .attr("transform", function (d, i) {
-          return "rotate(" + ((i / months.length * 360) - 90) +
-              ")translate(" + radius(maxVal) + ")";
-      })
-      .attr("class", "line-ticks");
-
-  lineAxes.append('line')
-      .attr("x2", -1 * radius(maxVal))
-      .style("stroke", "#CCC")
-      .style("fill", "none");
-
-  lineAxes.append('svg:text')
-      .text(String)
-      .attr("text-anchor", "middle")
-      .attr("transform", function (d, i) {
-          return (i / months.length * 360) < 180 ? null : "rotate(180)";
-      });
+		//vizBody.attr("transform","translate(" + centerXPos + ", " + centerYPos + ")");
+		var posx = -Math.floor('Canada'.length/2)*7;
+		var posy = h/2+vizPadding.bottom;
+		gcanada.append("text").attr('transform',"translate("+posx+","+posy+")").text('Canada');
+		posx = -Math.floor('USA'.length/2)*7;
+		gusa.append("text").attr('transform',"translate("+posx+","+posy+")").text('USA');
+		posx = -Math.floor('Spain'.length/2)*7;
+		gspain.append("text").attr('transform',"translate("+posx+","+posy+")").text('Spain');
+		posx = -Math.floor('France'.length/2)*7;
+		gfrance.append("text").attr('transform',"translate("+posx+","+posy+")").text('France');
+		posx = -Math.floor('Sweden'.length/2)*7;
+		gsweden.append("text").attr('transform',"translate("+posx+","+posy+")").text('Sweden');
+		posx = -Math.floor('Russia'.length/2)*7;
+		grussia.append("text").attr('transform',"translate("+posx+","+posy+")").text('Russia');
+		posx = -Math.floor('Brazil'.length/2)*7;
+		gbrazil.append("text").attr('transform',"translate("+posx+","+posy+")").text('Brazil');
+		posx = -Math.floor('Algeria'.length/2)*7;
+		galgeria.append("text").attr('transform',"translate("+posx+","+posy+")").text('Algeria');
+		posx = -Math.floor('India'.length/2)*7;
+		gindia.append("text").attr('transform',"translate("+posx+","+posy+")").text('India');
+		posx = -Math.floor('China'.length/2)*7;
+		gchina.append("text").attr('transform',"translate("+posx+","+posy+")").text('China');
+		posx = -Math.floor('Argentina'.length/2)*7;
+		gargentina.append("text").attr('transform',"translate("+posx+","+posy+")").text('Argentina');
+		posx = -Math.floor('South Africa'.length/2)*7;
+		gsouthafrica.append("text").attr('transform',"translate("+posx+","+posy+")").text('South Africa');
+		posx = -Math.floor('Madagascar'.length/2)*7;
+		gmadagascar.append("text").attr('transform',"translate("+posx+","+posy+")").text('Madagascar');
+		posx = -Math.floor('Australia'.length/2)*7;
+		gaustralia.append("text").attr('transform',"translate("+posx+","+posy+")").text('Australia');
 
 
-  var groups,
-      lines,
-      linesToUpdate;
-	
-  	var radialLineGenerator=d3.radialLine();
-  
-  radialLineGenerator
-    		.radius(function (d) {
-          return radius(d)})
-    		.angle(function (d, i) {
-          if (i === 12) {
-              i = 0;
-          } //close the line
-          return (i / 12) * 2 * Math.PI;
-      });
-  
-  
-   color=d3.scaleLinear()
-   		.domain([0,series.length])
-      .range(['blue','red']);
-  
-  op= d3.scaleLinear().domain([0,series.length]).range([0.1,1])
-  groups = vizBody.selectAll('.series')
-      .data(series);
-  groups.enter().append("g")
-      .attr('class', 'series')
-      .style('fill', function (d, i) {
-    			console.log(i);
-          return color(i);
-      })
-      .style('stroke', function (d, i) {
-          return color(i);
-      })
-  		.style('opacity',function(d, i) {
-    			return op(i);
-  })
-  		.append('path')
-  		.attr("class", "line")
-  		.style("stroke-width", 1)
-      .style("fill", "none")
-  		.attr("d", radialLineGenerator);
+		for (i=0;i<ListePays.length;i+=1) {
+			dessin(ListePays[i]);
+		}
 
-  //groups.exit().remove();
+		function dessin(pays) {
+		  	var vizBody = pays;
+
+			d3.json("data/BD/"+pays+".json",function(data){
+			   	console.log(pays);
+			  	var dataset=data;
+			  
+				var series, 
+			    months,
+			    minVal,
+			    maxVal,
+
+
+			    radius,
+			    radiusLength,
+			    color;
+
+			    series = [[]];
+			  	nbannee=Math.floor(dataset.length/12);
+			  	annee=dataset[0].dt[2].concat(dataset[0].dt[3]);
+					
+
+			    months = [1,2,3,4,5,6,7,8,9,10,11,12];
+			  
+			    for (i=0; i<dataset.length; i+=1) {
+			      anneeactuelle=dataset[i].dt[2].concat(dataset[i].dt[3]);
+			      if (anneeactuelle!=annee){
+			        series.push([]);
+			        annee=dataset[i].dt[2].concat(dataset[i].dt[3]);
+			      }
+			      series[series.length-1].push(dataset[i].AverageTemperature) 
+			    }	
+				
+
+			  
+
+			    minVal=-5;
+			    maxVal=5;
+
+			    //to complete the radial lines
+			    for (i = 0; i < series.length; i += 1) {
+			        series[i].push(series[i][0]);
+			    }
+
+			  
+
+
+			    radius = d3.scaleLinear().domain([minVal, maxVal])
+			        .range([0, (circleConstraint / 2)]);
+			    radiusLength = radius(maxVal);
 
 
 
 
-})
+			    var radialTicks = radius.ticks(5),
+			        i,
+			        circleAxes,
+			        lineAxes;
+
+
+			    circleAxes = d3.select("."+vizBody).selectAll('.circle-ticks')
+			        .data(radialTicks)
+			        .enter().append('g')
+			        .attr("class", "circle-ticks");
+
+			    circleAxes.append("circle")
+			        .attr("r", function (d, i) {
+			            return radius(d);
+			        })
+			        .attr("class", "circle")
+			        .style("stroke", "#CCC")
+			        .style("fill", "none");
+
+			    circleAxes.append("text")
+			        .attr("text-anchor", "middle")
+			        .attr("dy", function (d) {
+			            return -1 * radius(d);
+			        })
+			        .text(String);
+
+			    lineAxes = d3.select("."+vizBody).selectAll('.line-ticks')
+			        .data(months)
+			        .enter().append('g')
+			        .attr("transform", function (d, i) {
+			            return "rotate(" + ((i / months.length * 360) - 90) +
+			                ")translate(" + radius(maxVal) + ")";
+			        })
+			        .attr("class", "line-ticks");
+
+			    lineAxes.append('line')
+			        .attr("x2", -1 * radius(maxVal))
+			        .style("stroke", "#CCC")
+			        .style("fill", "none");
+
+			    lineAxes.append('svg:text')
+			        .text(String)
+			        .attr("text-anchor", "middle")
+			        .attr("transform", function (d, i) {
+			            return (i / months.length * 360) < 180 ? null : "rotate(180)";
+			        });
+
+
+			    var groups,
+			        lines,
+			        linesToUpdate;
+
+			      var radialLineGenerator=d3.radialLine();
+
+			    radialLineGenerator
+			          .radius(function (d,i) {
+			            return radius(d-series[0][i])})
+			          .angle(function (d, i) {
+			            if (i === 12) {
+			                i = 0;
+			            } //close the line
+			            return (i / 12) * 2 * Math.PI;
+			        });
+
+
+			     color=d3.scaleLinear()
+			        .domain([0,series.length])
+			        .range(['blue','red']);
+
+			    op= d3.scaleLinear().domain([0,series.length]).range([0.1,1])
+
+			    groups = d3.select("."+vizBody).selectAll('.series')
+			        .data(series)
+			        .enter()
+			        .append("g")
+			        .attr('class', 'series')
+			        .style('fill', function (d, i) {
+			            return color(i);
+			        })
+			        .style('stroke', function (d, i) {
+			            return color(i);
+			        })
+			        .style('opacity',function(d, i) {
+			            return op(i);
+			    })
+			        .append('path')
+			        .attr("class", "line")
+			        .style("stroke-width", 1)
+			        .style("fill", "none")
+			        .attr("d", radialLineGenerator);
+
+			    //groups.exit().remove();
 
 
 
-  
-  
-</script>
-</body>
+
+			})
+
+		}
+
+
+
+		  
+		  
+	</script>
+	</body>
 </html>

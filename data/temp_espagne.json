@@ -1,0 +1,1486 @@
+ [{
+    "dt": "2000-01-01",
+    "AverageTemperature": 23.845,
+    "AverageTemperatureUncertainty": 0.127,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-02-01",
+    "AverageTemperature": 26.587000000000001,
+    "AverageTemperatureUncertainty": 0.154,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-03-01",
+    "AverageTemperature": 27.872000000000001,
+    "AverageTemperatureUncertainty": 0.247,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-04-01",
+    "AverageTemperature": 10.067,
+    "AverageTemperatureUncertainty": 0.202,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-05-01",
+    "AverageTemperature": 15.450999999999999,
+    "AverageTemperatureUncertainty": 0.3,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-06-01",
+    "AverageTemperature": 17.666,
+    "AverageTemperatureUncertainty": 0.18,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-07-01",
+    "AverageTemperature": 16.954,
+    "AverageTemperatureUncertainty": 0.233,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-08-01",
+    "AverageTemperature": 19.512,
+    "AverageTemperatureUncertainty": 0.317,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-09-01",
+    "AverageTemperature": 16.548000000000002,
+    "AverageTemperatureUncertainty": 0.185,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-10-01",
+    "AverageTemperature": 11.675999999999998,
+    "AverageTemperatureUncertainty": 0.194,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-11-01",
+    "AverageTemperature": 8.027000000000001,
+    "AverageTemperatureUncertainty": 0.205,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2000-12-01",
+    "AverageTemperature": 6.671,
+    "AverageTemperatureUncertainty": 0.318,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-01-01",
+    "AverageTemperature": 4.511,
+    "AverageTemperatureUncertainty": 0.379,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-02-01",
+    "AverageTemperature": 5.447,
+    "AverageTemperatureUncertainty": 0.195,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-03-01",
+    "AverageTemperature": 8.368,
+    "AverageTemperatureUncertainty": 0.35200000000000004,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-04-01",
+    "AverageTemperature": 8.958,
+    "AverageTemperatureUncertainty": 0.163,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-05-01",
+    "AverageTemperature": 15.48,
+    "AverageTemperatureUncertainty": 0.203,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-06-01",
+    "AverageTemperature": 16.836,
+    "AverageTemperatureUncertainty": 0.295,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-07-01",
+    "AverageTemperature": 19.456,
+    "AverageTemperatureUncertainty": 0.189,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-08-01",
+    "AverageTemperature": 19.921,
+    "AverageTemperatureUncertainty": 0.16,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-09-01",
+    "AverageTemperature": 13.894,
+    "AverageTemperatureUncertainty": 0.325,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-10-01",
+    "AverageTemperature": 14.532,
+    "AverageTemperatureUncertainty": 0.289,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-11-01",
+    "AverageTemperature": 6.327000000000001,
+    "AverageTemperatureUncertainty": 0.32299999999999995,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2001-12-01",
+    "AverageTemperature": 2.725,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-01-01",
+    "AverageTemperature": 4.803999999999999,
+    "AverageTemperatureUncertainty": 0.256,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-02-01",
+    "AverageTemperature": 7.775,
+    "AverageTemperatureUncertainty": 0.124,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-03-01",
+    "AverageTemperature": 8.636000000000001,
+    "AverageTemperatureUncertainty": 0.14300000000000002,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-04-01",
+    "AverageTemperature": 10.69,
+    "AverageTemperatureUncertainty": 0.155,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-05-01",
+    "AverageTemperature": 13.645,
+    "AverageTemperatureUncertainty": 0.362,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-06-01",
+    "AverageTemperature": 17.921,
+    "AverageTemperatureUncertainty": 0.17600000000000002,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-07-01",
+    "AverageTemperature": 18.441,
+    "AverageTemperatureUncertainty": 0.179,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-08-01",
+    "AverageTemperature": 18.759,
+    "AverageTemperatureUncertainty": 0.244,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-09-01",
+    "AverageTemperature": 15.123,
+    "AverageTemperatureUncertainty": 0.223,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-10-01",
+    "AverageTemperature": 11.614,
+    "AverageTemperatureUncertainty": 0.248,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-11-01",
+    "AverageTemperature": 8.896,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2002-12-01",
+    "AverageTemperature": 6.151999999999999,
+    "AverageTemperatureUncertainty": 0.2,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-01-01",
+    "AverageTemperature": 2.597,
+    "AverageTemperatureUncertainty": 0.203,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-02-01",
+    "AverageTemperature": 3.28,
+    "AverageTemperatureUncertainty": 0.266,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-03-01",
+    "AverageTemperature": 9.636000000000001,
+    "AverageTemperatureUncertainty": 0.334,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-04-01",
+    "AverageTemperature": 11.087,
+    "AverageTemperatureUncertainty": 0.229,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-05-01",
+    "AverageTemperature": 14.475999999999999,
+    "AverageTemperatureUncertainty": 0.32,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-06-01",
+    "AverageTemperature": 20.233,
+    "AverageTemperatureUncertainty": 0.391,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-07-01",
+    "AverageTemperature": 20.507,
+    "AverageTemperatureUncertainty": 0.348,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-08-01",
+    "AverageTemperature": 22.892,
+    "AverageTemperatureUncertainty": 0.5479999999999999,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-09-01",
+    "AverageTemperature": 16.124000000000002,
+    "AverageTemperatureUncertainty": 0.339,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-10-01",
+    "AverageTemperature": 9.101,
+    "AverageTemperatureUncertainty": 0.277,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-11-01",
+    "AverageTemperature": 8.357999999999999,
+    "AverageTemperatureUncertainty": 0.234,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2003-12-01",
+    "AverageTemperature": 4.623,
+    "AverageTemperatureUncertainty": 0.188,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-01-01",
+    "AverageTemperature": 4.453,
+    "AverageTemperatureUncertainty": 0.139,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-02-01",
+    "AverageTemperature": 5.209,
+    "AverageTemperatureUncertainty": 0.107,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-03-01",
+    "AverageTemperature": 6.884,
+    "AverageTemperatureUncertainty": 0.23,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-04-01",
+    "AverageTemperature": 10.562999999999999,
+    "AverageTemperatureUncertainty": 0.232,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-05-01",
+    "AverageTemperature": 13.347999999999999,
+    "AverageTemperatureUncertainty": 0.17800000000000002,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-06-01",
+    "AverageTemperature": 17.602999999999998,
+    "AverageTemperatureUncertainty": 0.267,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-07-01",
+    "AverageTemperature": 18.631,
+    "AverageTemperatureUncertainty": 0.225,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-08-01",
+    "AverageTemperature": 19.636,
+    "AverageTemperatureUncertainty": 0.287,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-09-01",
+    "AverageTemperature": 17.07,
+    "AverageTemperatureUncertainty": 0.17,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-10-01",
+    "AverageTemperature": 12.167000000000002,
+    "AverageTemperatureUncertainty": 0.211,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-11-01",
+    "AverageTemperature": 7.414,
+    "AverageTemperatureUncertainty": 0.215,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2004-12-01",
+    "AverageTemperature": 3.088,
+    "AverageTemperatureUncertainty": 0.155,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-01-01",
+    "AverageTemperature": 5.053,
+    "AverageTemperatureUncertainty": 0.197,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-02-01",
+    "AverageTemperature": 2.8840000000000003,
+    "AverageTemperatureUncertainty": 0.198,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-03-01",
+    "AverageTemperature": 7.415,
+    "AverageTemperatureUncertainty": 0.173,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-04-01",
+    "AverageTemperature": 10.884,
+    "AverageTemperatureUncertainty": 0.233,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-05-01",
+    "AverageTemperature": 14.13,
+    "AverageTemperatureUncertainty": 0.267,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-06-01",
+    "AverageTemperature": 18.816,
+    "AverageTemperatureUncertainty": 0.151,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-07-01",
+    "AverageTemperature": 19.582,
+    "AverageTemperatureUncertainty": 0.2,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-08-01",
+    "AverageTemperature": 18.266,
+    "AverageTemperatureUncertainty": 0.235,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-09-01",
+    "AverageTemperature": 17.279,
+    "AverageTemperatureUncertainty": 0.151,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-10-01",
+    "AverageTemperature": 14.817,
+    "AverageTemperatureUncertainty": 0.16899999999999998,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-11-01",
+    "AverageTemperature": 6.132000000000001,
+    "AverageTemperatureUncertainty": 0.227,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2005-12-01",
+    "AverageTemperature": 3.377,
+    "AverageTemperatureUncertainty": 0.264,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-01-01",
+    "AverageTemperature": 2.408,
+    "AverageTemperatureUncertainty": 0.268,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-02-01",
+    "AverageTemperature": 3.0439999999999996,
+    "AverageTemperatureUncertainty": 0.191,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-03-01",
+    "AverageTemperature": 5.667999999999998,
+    "AverageTemperatureUncertainty": 0.247,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-04-01",
+    "AverageTemperature": 10.075,
+    "AverageTemperatureUncertainty": 0.36,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-05-01",
+    "AverageTemperature": 14.484000000000002,
+    "AverageTemperatureUncertainty": 0.407,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-06-01",
+    "AverageTemperature": 18.386,
+    "AverageTemperatureUncertainty": 0.274,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-07-01",
+    "AverageTemperature": 23.264,
+    "AverageTemperatureUncertainty": 0.184,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-08-01",
+    "AverageTemperature": 17.090999999999998,
+    "AverageTemperatureUncertainty": 0.222,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-09-01",
+    "AverageTemperature": 18.688,
+    "AverageTemperatureUncertainty": 0.244,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-10-01",
+    "AverageTemperature": 14.368,
+    "AverageTemperatureUncertainty": 0.14,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-11-01",
+    "AverageTemperature": 8.857999999999999,
+    "AverageTemperatureUncertainty": 0.227,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2006-12-01",
+    "AverageTemperature": 5.127999999999999,
+    "AverageTemperatureUncertainty": 0.305,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-01-01",
+    "AverageTemperature": 7.3020000000000005,
+    "AverageTemperatureUncertainty": 0.2,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-02-01",
+    "AverageTemperature": 7.572,
+    "AverageTemperatureUncertainty": 0.158,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-03-01",
+    "AverageTemperature": 7.662000000000001,
+    "AverageTemperatureUncertainty": 0.264,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-04-01",
+    "AverageTemperature": 14.296,
+    "AverageTemperatureUncertainty": 0.411,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-05-01",
+    "AverageTemperature": 15.027999999999999,
+    "AverageTemperatureUncertainty": 0.231,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-06-01",
+    "AverageTemperature": 17.679000000000002,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-07-01",
+    "AverageTemperature": 17.915,
+    "AverageTemperatureUncertainty": 0.173,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-08-01",
+    "AverageTemperature": 17.573,
+    "AverageTemperatureUncertainty": 0.124,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-09-01",
+    "AverageTemperature": 14.734000000000002,
+    "AverageTemperatureUncertainty": 0.319,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-10-01",
+    "AverageTemperature": 10.833,
+    "AverageTemperatureUncertainty": 0.141,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-11-01",
+    "AverageTemperature": 6.6869999999999985,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2007-12-01",
+    "AverageTemperature": 3.7289999999999996,
+    "AverageTemperatureUncertainty": 0.245,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-01-01",
+    "AverageTemperature": 6.192,
+    "AverageTemperatureUncertainty": 0.236,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-02-01",
+    "AverageTemperature": 6.148,
+    "AverageTemperatureUncertainty": 0.203,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-03-01",
+    "AverageTemperature": 7.0920000000000005,
+    "AverageTemperatureUncertainty": 0.265,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-04-01",
+    "AverageTemperature": 9.488,
+    "AverageTemperatureUncertainty": 0.117,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-05-01",
+    "AverageTemperature": 16.445999999999998,
+    "AverageTemperatureUncertainty": 0.135,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-06-01",
+    "AverageTemperature": 17.187,
+    "AverageTemperatureUncertainty": 0.212,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-07-01",
+    "AverageTemperature": 19.041,
+    "AverageTemperatureUncertainty": 0.18600000000000005,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-08-01",
+    "AverageTemperature": 18.49,
+    "AverageTemperatureUncertainty": 0.274,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-09-01",
+    "AverageTemperature": 14.263,
+    "AverageTemperatureUncertainty": 0.195,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-10-01",
+    "AverageTemperature": 10.589,
+    "AverageTemperatureUncertainty": 0.113,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-11-01",
+    "AverageTemperature": 7.5120000000000005,
+    "AverageTemperatureUncertainty": 0.264,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2008-12-01",
+    "AverageTemperature": 2.891,
+    "AverageTemperatureUncertainty": 0.203,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-01-01",
+    "AverageTemperature": 0.981,
+    "AverageTemperatureUncertainty": 0.181,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-02-01",
+    "AverageTemperature": 3.9019999999999997,
+    "AverageTemperatureUncertainty": 0.17,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-03-01",
+    "AverageTemperature": 7.197,
+    "AverageTemperatureUncertainty": 0.154,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-04-01",
+    "AverageTemperature": 12.097999999999999,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-05-01",
+    "AverageTemperature": 14.758,
+    "AverageTemperatureUncertainty": 0.263,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-06-01",
+    "AverageTemperature": 17.136,
+    "AverageTemperatureUncertainty": 0.113,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-07-01",
+    "AverageTemperature": 19.354,
+    "AverageTemperatureUncertainty": 0.28,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-08-01",
+    "AverageTemperature": 20.509,
+    "AverageTemperatureUncertainty": 0.271,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-09-01",
+    "AverageTemperature": 16.363,
+    "AverageTemperatureUncertainty": 0.225,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-10-01",
+    "AverageTemperature": 11.724,
+    "AverageTemperatureUncertainty": 0.155,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-11-01",
+    "AverageTemperature": 9.938,
+    "AverageTemperatureUncertainty": 0.281,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2009-12-01",
+    "AverageTemperature": 3.609,
+    "AverageTemperatureUncertainty": 0.161,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-01-01",
+    "AverageTemperature": 0.524,
+    "AverageTemperatureUncertainty": 0.214,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-02-01",
+    "AverageTemperature": 3.6210000000000004,
+    "AverageTemperatureUncertainty": 0.248,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-03-01",
+    "AverageTemperature": 7.221999999999999,
+    "AverageTemperatureUncertainty": 0.171,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-04-01",
+    "AverageTemperature": 10.82,
+    "AverageTemperatureUncertainty": 0.192,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-05-01",
+    "AverageTemperature": 12.552999999999999,
+    "AverageTemperatureUncertainty": 0.17,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-06-01",
+    "AverageTemperature": 18.017,
+    "AverageTemperatureUncertainty": 0.149,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-07-01",
+    "AverageTemperature": 20.909000000000002,
+    "AverageTemperatureUncertainty": 0.264,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-08-01",
+    "AverageTemperature": 18.169,
+    "AverageTemperatureUncertainty": 0.253,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-09-01",
+    "AverageTemperature": 15.127,
+    "AverageTemperatureUncertainty": 0.139,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-10-01",
+    "AverageTemperature": 11.03,
+    "AverageTemperatureUncertainty": 0.138,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-11-01",
+    "AverageTemperature": 6.744,
+    "AverageTemperatureUncertainty": 0.15,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2010-12-01",
+    "AverageTemperature": 0.18199999999999994,
+    "AverageTemperatureUncertainty": 0.277,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-01-01",
+    "AverageTemperature": 4.383,
+    "AverageTemperatureUncertainty": 0.195,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-02-01",
+    "AverageTemperature": 6.077999999999999,
+    "AverageTemperatureUncertainty": 0.192,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-03-01",
+    "AverageTemperature": 8.668,
+    "AverageTemperatureUncertainty": 0.215,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-04-01",
+    "AverageTemperature": 13.959000000000001,
+    "AverageTemperatureUncertainty": 0.259,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-05-01",
+    "AverageTemperature": 15.574000000000002,
+    "AverageTemperatureUncertainty": 0.365,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-06-01",
+    "AverageTemperature": 17.519000000000002,
+    "AverageTemperatureUncertainty": 0.273,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-07-01",
+    "AverageTemperature": 17.232,
+    "AverageTemperatureUncertainty": 0.219,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-08-01",
+    "AverageTemperature": 18.630000000000006,
+    "AverageTemperatureUncertainty": 0.207,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-09-01",
+    "AverageTemperature": 17.369,
+    "AverageTemperatureUncertainty": 0.27,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-10-01",
+    "AverageTemperature": 12.605,
+    "AverageTemperatureUncertainty": 0.243,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-11-01",
+    "AverageTemperature": 8.937000000000001,
+    "AverageTemperatureUncertainty": 0.222,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2011-12-01",
+    "AverageTemperature": 6.955,
+    "AverageTemperatureUncertainty": 0.299,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-01-01",
+    "AverageTemperature": 5.867000000000001,
+    "AverageTemperatureUncertainty": 0.257,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-02-01",
+    "AverageTemperature": 1.4219999999999997,
+    "AverageTemperatureUncertainty": 0.268,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-03-01",
+    "AverageTemperature": 9.721,
+    "AverageTemperatureUncertainty": 0.339,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-04-01",
+    "AverageTemperature": 8.781,
+    "AverageTemperatureUncertainty": 0.184,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-05-01",
+    "AverageTemperature": 14.86,
+    "AverageTemperatureUncertainty": 0.237,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-06-01",
+    "AverageTemperature": 15.717,
+    "AverageTemperatureUncertainty": 0.421,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-07-01",
+    "AverageTemperature": 18.193,
+    "AverageTemperatureUncertainty": 0.275,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-08-01",
+    "AverageTemperature": 20.102999999999998,
+    "AverageTemperatureUncertainty": 0.522,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-09-01",
+    "AverageTemperature": 15.349,
+    "AverageTemperatureUncertainty": 0.354,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-10-01",
+    "AverageTemperature": 11.613,
+    "AverageTemperatureUncertainty": 0.311,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-11-01",
+    "AverageTemperature": 7.42,
+    "AverageTemperatureUncertainty": 0.24,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2012-12-01",
+    "AverageTemperature": 5.593,
+    "AverageTemperatureUncertainty": 0.461,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-01-01",
+    "AverageTemperature": 3.0439999999999996,
+    "AverageTemperatureUncertainty": 0.746,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-02-01",
+    "AverageTemperature": 2.456,
+    "AverageTemperatureUncertainty": 0.282,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-03-01",
+    "AverageTemperature": 4.57,
+    "AverageTemperatureUncertainty": 0.337,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-04-01",
+    "AverageTemperature": 9.559,
+    "AverageTemperatureUncertainty": 0.251,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-05-01",
+    "AverageTemperature": 11.703,
+    "AverageTemperatureUncertainty": 0.282,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-06-01",
+    "AverageTemperature": 16.34,
+    "AverageTemperatureUncertainty": 0.271,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-07-01",
+    "AverageTemperature": 21.186,
+    "AverageTemperatureUncertainty": 0.381,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-08-01",
+    "AverageTemperature": 19.235,
+    "AverageTemperatureUncertainty": 0.399,
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  },
+  {
+    "dt": "2013-09-01",
+    "AverageTemperature": "",
+    "AverageTemperatureUncertainty": "",
+    "City": "Paris",
+    "Country": "France",
+    "Latitude": "49.03N",
+    "Longitude": "2.45E"
+  }
+]
