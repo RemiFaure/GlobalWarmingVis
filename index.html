@@ -62,7 +62,7 @@
 		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
 		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
 
-		var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+3*w+','+2*h+')').attr("width",2*w).attr("height",2*h).style('fill','blue');
+		//var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+3*w+','+2*h+')').attr("width",2*w).attr("height",2*h).style('fill','blue');
 
 		//vizBody.attr("transform","translate(" + centerXPos + ", " + centerYPos + ")");
 		var posx = -Math.floor('Canada'.length/2)*7;
@@ -253,7 +253,7 @@
 
 		}
 
-		function graphe(pays){
+		/*function graphe(pays){
 			d3.csv("data/BD/"+pays,function(data){
 			  	var dataset=data;
 
@@ -261,7 +261,7 @@
 			  	var line=d3.line
 			  				.x(function(d){return d.dt})
 
-		}
+		}*/
 
 
 		  
