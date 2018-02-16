@@ -13,13 +13,14 @@
 	<script>
 		var width = 1300;
 		var height = 700;
-		var w = 220;
-		var h = 220;
+		var w = 200;
+		var h = 200;
 		var svg = d3.select('body')
 		    .append('svg')
 		    .attr('width', 1300)
 		    .attr('height', 700)
-		    .attr('class', 'svg');
+		    .attr('class', 'svg')
+		   	.attr('transform','translate(75,0)');
 
 		var heightCircleConstraint,
 			widthCircleConstraint,
@@ -56,14 +57,16 @@
 		var galgeria = svg.append('g').attr('class','Algeria').attr("transform","translate("+(w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
 		var gindia = svg.append('g').attr('class','India').attr("transform","translate("+(4*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
 		var gchina = svg.append('g').attr('class','China').attr("transform","translate("+(5*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
-		var gargentina = svg.append('g').attr('class','Argentina').attr("transform","translate("+(centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
-		var gsouthafrica = svg.append('g').attr('class','South Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
-		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
-		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+vizPadding.bottom)+")");
+		var gargentina = svg.append('g').attr('class','Argentina').attr("transform","translate("+(centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
+		var gsouthafrica = svg.append('g').attr('class','South Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
+		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
+		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
+
+		var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+3*w+','+2*h+')').attr("width",2*w).attr("height",2*h).style('fill','blue');
 
 		//vizBody.attr("transform","translate(" + centerXPos + ", " + centerYPos + ")");
 		var posx = -Math.floor('Canada'.length/2)*7;
-		var posy = h/2+vizPadding.bottom;
+		var posy = h/2+vizPadding.bottom/3;
 		gcanada.append("text").attr('transform',"translate("+posx+","+posy+")").text('Canada');
 		posx = -Math.floor('USA'.length/2)*7;
 		gusa.append("text").attr('transform',"translate("+posx+","+posy+")").text('USA');
@@ -100,8 +103,7 @@
 		function dessin(pays) {
 		  	var vizBody = pays;
 
-			d3.json("data/BD/"+pays+".json",function(data){
-			   	console.log(pays);
+			d3.csv("data/BD/"+pays,function(data){
 			  	var dataset=data;
 			  
 				var series, 
@@ -220,7 +222,7 @@
 			        .domain([0,series.length])
 			        .range(['blue','red']);
 
-			    op= d3.scaleLinear().domain([0,series.length]).range([0.1,1])
+			    op= d3.scaleLinear().domain([0,series.length]).range([1,0.3])
 
 			    groups = d3.select("."+vizBody).selectAll('.series')
 			        .data(series)
@@ -251,6 +253,15 @@
 
 		}
 
+		function graphe(pays){
+			d3.csv("data/BD/"+pays,function(data){
+			  	var dataset=data;
+
+			  	xscale = d3.scaleLinear().domain()
+			  	var line=d3.line
+			  				.x(function(d){return d.dt})
+
+		}
 
 
 		  
