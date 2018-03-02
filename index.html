@@ -310,10 +310,14 @@
       								.data(dataset)
       								.enter()
       								.append("circle")
-      								.attr("cx",function(d){return xscale(formatDate(d.dt))})
-      								.attr("cy",function(d){return yscale(d.AverageTemperature)})
+      								.attr("cx",function(d){return xscale(formatDate(dataset[0].dt))})
+      								.attr("cy",function(d){return yscale(-30)})
       								.attr("r",2)
       								.attr("fill",function(d,i){return color(i)});
+
+				circles.transition().duration(1000).attr("cx",function(d){return xscale(formatDate(d.dt))})
+      								.attr("cy",function(d){return yscale(d.AverageTemperature)})
+
 			  	/*var line=d3.line()
 			  				.x(function(d){return xscale(formatDate(d.dt))})
 			  				.y(function(d){return yscale(d.AverageTemperature)});
