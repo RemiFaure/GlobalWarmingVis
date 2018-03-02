@@ -328,10 +328,12 @@
 
       			graphique.append("g")
         			.attr("class", "axis")
+        			.transition().duration(1000)
         			.attr("transform", "translate(0, "+ (2*h-20) + ")")
         			.call(xAxis);
       			graphique.append("g")
         			.attr("class", "axis")
+        			.transition().duration(1000)
         			.attr("transform", "translate("+ 20 + ",0)")
         			.call(yAxis);
 
