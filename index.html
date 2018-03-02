@@ -310,8 +310,8 @@
       								.data(dataset)
       								.enter()
       								.append("circle")
-      								.attr("cx",function(d){return xscale(formatDate(dataset[0].dt))})
-      								.attr("cy",function(d){return yscale(-30)})
+      								.attr("cx",function(d){return xscale(formatDate(dataset[Math.trunc(dataset.length/2)].dt))})
+      								.attr("cy",function(d,i){return yscale(2.5)})
       								.attr("r",2)
       								.attr("fill",function(d,i){return color(i)});
 
@@ -328,13 +328,13 @@
 
       			graphique.append("g")
         			.attr("class", "axis")
-        			.transition().duration(1000)
         			.attr("transform", "translate(0, "+ (2*h-20) + ")")
+        			.transition().duration(1000)
         			.call(xAxis);
       			graphique.append("g")
         			.attr("class", "axis")
-        			.transition().duration(1000)
         			.attr("transform", "translate("+ 20 + ",0)")
+        			.transition().duration(1000)
         			.call(yAxis);
 
         		
@@ -342,7 +342,7 @@
         		var posy = 2*h+2*vizPadding.bottom;
         		var posx2=w-Math.floor("Temperature evolution of".length/2)*7;
         		var posy2=posy-vizPadding.bottom;
-        		graphique.append("text").attr("class","text").attr("transform","translate("+posx+","+posy+")").text(pays);
+        		graphique.append("text").attr("class","text").attr("transform","translate("+posx+","+posy+")").text(pays).attr("fill","white").transition().duration(1000).attr("fill","black");
         		graphique.append("text").attr("class","text").attr("transform","translate("+posx2+","+posy2+")").text("Temperature evolution of");
 		});
 
