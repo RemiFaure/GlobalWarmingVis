@@ -97,8 +97,8 @@
 		var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+2*w+','+h+')').attr("width",2*w).attr("height",2*h);
 
 		var graphique=ggros.append("g").attr("class","graphique");
-		graphique.append("text").attr("class","text").attr("transform","translate(130,200)").text("Move the mouse over");
-		graphique.append("text").attr("class","text").attr("transform","translate(130,220)").text("the country you want");
+		graphique.append("text").attr("class","text").attr("transform","translate(125,200)").text("Move the mouse over");
+		graphique.append("text").attr("class","text").attr("transform","translate(125,220)").text("the country you want");
 
 		graphique.append("text").attr("class","text").attr("transform","translate(0,350)").text("Radar charts : difference of temperature (each month)"); 
 		graphique.append("text").attr("class","text").attr("transform","translate(105,370)").text("between the actual year and 1867"); 
@@ -108,6 +108,8 @@
 		graphique.append("text").attr("class","text").attr("transform","translate(140,422)").text(": 2012"); 
 
 		svg.append("text").attr("class","text").attr("transform","translate(510,680)").attr("font-size",15).text("Data source : Berkeley Earth"); 
+
+		graphique.append("text").attr("class","text").attr("transform","translate(85,60)").text("GLOBAL WARMING VISUALISATION"); 
 
 		var posx = -Math.floor('Canada'.length/2)*7;
 		var posy = h/2+vizPadding.bottom/3;
