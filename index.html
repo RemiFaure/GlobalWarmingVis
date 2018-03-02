@@ -53,46 +53,46 @@
 
 		
 		var gcanada = svg.append('g').attr('class','Canada').attr("transform","translate("+centerXPos+","+centerYPos+")");
-		svg.append("rect").attr('id','Canada').attr("width",w).attr("height",h).attr("transform","translate(0,0)").style("opacity","0").on("mouseover",  function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Canada').attr("width",w).attr("height",h).attr("transform","translate(0,0)").style("opacity","0").on("mouseover",  function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gusa = svg.append('g').attr('class','USA').attr("transform","translate("+(w+centerXPos)+","+centerYPos+")");
-		svg.append("rect").attr('id','USA').attr("width",w).attr("height",h).attr("transform","translate("+w+",0)").style("opacity","0").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','USA').attr("width",w).attr("height",h).attr("transform","translate("+w+",0)").style("opacity","0").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gspain = svg.append('g').attr('class','Spain').attr("transform","translate("+(2*w+centerXPos)+","+centerYPos+")");
-		svg.append("rect").attr('id','Spain').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+2*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Spain').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+2*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gfrance = svg.append('g').attr('class','France').attr("transform","translate("+(3*w+centerXPos)+","+centerYPos+")");
-		svg.append("rect").attr('id','France').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+3*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','France').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+3*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gsweden = svg.append('g').attr('class','Sweden').attr("transform","translate("+(4*w+centerXPos)+","+centerYPos+")");
-		svg.append("rect").attr('id','Sweden').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+4*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Sweden').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+4*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var grussia = svg.append('g').attr('class','Russia').attr("transform","translate("+(5*w+centerXPos)+","+centerYPos+")");
-		svg.append("rect").attr('id','Russia').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Russia').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+",0)").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gbrazil = svg.append('g').attr('class','Brazil').attr("transform","translate("+(0*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
-		svg.append("rect").attr('id','Brazil').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate(0,"+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Brazil').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate(0,"+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var galgeria = svg.append('g').attr('class','Algeria').attr("transform","translate("+(w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
-		svg.append("rect").attr('id','Algeria').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+w+","+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Algeria').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+w+","+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gindia = svg.append('g').attr('class','India').attr("transform","translate("+(4*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
 		svg.append("rect").attr('id','India').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+4*w+","+(h+vizPadding.bottom)+")").on("mouseover", function(){d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
 
 		var gchina = svg.append('g').attr('class','China').attr("transform","translate("+(5*w+centerXPos)+","+(h+centerYPos+vizPadding.bottom)+")");
-		svg.append("rect").attr('id','China').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+","+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','China').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+","+(h+vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gargentina = svg.append('g').attr('class','Argentina').attr("transform","translate("+(centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
-		svg.append("rect").attr('id','Argentina').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate(0,"+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Argentina').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate(0,"+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gsouthafrica = svg.append('g').attr('class','South_Africa').attr("transform","translate("+(w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
-		svg.append("rect").attr('id','South_Africa').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','South_Africa').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gmadagascar = svg.append('g').attr('class','Madagascar').attr("transform","translate("+(4*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
-		svg.append("rect").attr('id','Madagascar').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+4*w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Madagascar').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+4*w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var gaustralia = svg.append('g').attr('class','Australia').attr("transform","translate("+(5*w+centerXPos)+","+(2*h+centerYPos+2*vizPadding.bottom)+")");
-		svg.append("rect").attr('id','Australia').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) });
+		svg.append("rect").attr('id','Australia').attr("width",w).attr("height",h).style("opacity","0").attr("transform","translate("+5*w+","+(2*h+2*vizPadding.bottom)+")").on("mouseover", function(){ d3.selectAll(".graphique").remove(); graphe(d3.select(this).attr("id")) }).on("click", function(){d3.selectAll(".graphique").remove(); grapheadapte(d3.select(this).attr("id"))});
 
 		var ggros = svg.append('g').attr('class','gros').attr("transform",'translate('+2*w+','+h+')').attr("width",2*w).attr("height",2*h);
 
@@ -309,9 +309,66 @@
 			  	xscale = d3.scaleTime()
 			  			.domain([formatDate(dataset[0].dt),formatDate(dataset[dataset.length-1].dt)])
 			  			.range([20,2*w-20]);
-			  	//minVal=d3.min(dataset, function(d){return d.AverageTemperature});
-			  	//maxVal=d3.max(dataset, function(d){return d.AverageTemperature});
+			  	minVal=d3.min(dataset, function(d,i){return +d.AverageTemperature});
+			  	maxVal=d3.max(dataset, function(d){return +d.AverageTemperature});
 			  	yscale = d3.scaleLinear().domain([-30,35]).range([2*h-20,20]);
+			  	color=d3.scaleLinear()
+			        .domain([0,dataset.length])
+			        .range(['blue','red']);
+
+			  	var circles = graphique.selectAll("circle")
+      								.data(dataset)
+      								.enter()
+      								.append("circle")
+      								.attr("cx",function(d){return xscale(formatDate(dataset[Math.trunc(dataset.length/2)].dt))})
+      								.attr("cy",function(d,i){return yscale(2.5)})
+      								.attr("r",2)
+      								.attr("fill",function(d,i){return color(i)});
+
+				circles.transition().duration(1000).attr("cx",function(d){return xscale(formatDate(d.dt))})
+      								.attr("cy",function(d){return yscale(d.AverageTemperature)})
+
+			  	/*var line=d3.line()
+			  				.x(function(d){return xscale(formatDate(d.dt))})
+			  				.y(function(d){return yscale(d.AverageTemperature)});
+			  	graphique.append("path").datum(dataset).attr("d", line);*/
+
+			  	var xAxis = d3.axisBottom(xscale);
+      			var yAxis = d3.axisLeft(yscale);
+
+      			graphique.append("g")
+        			.attr("class", "axis")
+        			.attr("transform", "translate(0, "+ (2*h-20) + ")")
+        			.transition().duration(1000)
+        			.call(xAxis);
+      			graphique.append("g")
+        			.attr("class", "axis")
+        			.attr("transform", "translate("+ 20 + ",0)")
+        			.transition().duration(1000)
+        			.call(yAxis);
+
+        		
+        		var posx = w-Math.floor(pays.length/2)*7;
+        		var posy = 2*h+2*vizPadding.bottom;
+        		var posx2=w-Math.floor("Temperature evolution of".length/2)*7;
+        		var posy2=posy-vizPadding.bottom;
+        		graphique.append("text").attr("class","text").attr("transform","translate("+posx+","+posy+")").text(pays).attr("fill","white").transition().duration(1000).attr("fill","black");
+        		graphique.append("text").attr("class","text").attr("transform","translate("+posx2+","+posy2+")").text("Temperature evolution of");
+		});
+
+		}
+
+		function grapheadapte(pays){
+			var graphique=ggros.append("g").attr("class","graphique");
+			d3.csv("data/BD/"+pays,function(data){
+				dataset=data;
+				var formatDate = d3.timeParse("%Y-%m-%d");
+			  	xscale = d3.scaleTime()
+			  			.domain([formatDate(dataset[0].dt),formatDate(dataset[dataset.length-1].dt)])
+			  			.range([20,2*w-20]);
+			  	minVal=d3.min(dataset, function(d,i){return +d.AverageTemperature});
+			  	maxVal=d3.max(dataset, function(d){return +d.AverageTemperature});
+			  	yscale = d3.scaleLinear().domain([minVal,maxVal]).range([2*h-20,20]);
 			  	color=d3.scaleLinear()
 			        .domain([0,dataset.length])
 			        .range(['blue','red']);
