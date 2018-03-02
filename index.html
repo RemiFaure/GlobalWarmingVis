@@ -107,6 +107,8 @@
 		graphique.append("text").attr("class","text").attr("transform","translate(140,402)").text(": 1867"); 
 		graphique.append("text").attr("class","text").attr("transform","translate(140,422)").text(": 2012"); 
 
+		svg.append("text").attr("class","text").attr("transform","translate(510,680)").attr("font-size",15).text("Data source : Berkeley Earth"); 
+
 		var posx = -Math.floor('Canada'.length/2)*7;
 		var posy = h/2+vizPadding.bottom/3;
 		gcanada.append("text").attr("class","text").attr('transform',"translate("+posx+","+posy+")").text('Canada');
