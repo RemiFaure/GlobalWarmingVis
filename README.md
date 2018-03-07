@@ -25,6 +25,7 @@ The data was either seperated by city or by country. We used the average tempera
 
 All our visualisation fits on one web page.
 When opening the page, 14 radar charts appear in front of you. They stand for this list of forteen countries : Canada, USA, Spain, France, Sweden, Russia, Brazil, Algeria, India, China, Argentina, South Africa, Madagascar and Australia.
+<image src="img/startpage_visual.png" width="400" align="center">
 
 As you can see, we tried to pick countries localized in different part of the earth and on different continents. 
 We have : 
