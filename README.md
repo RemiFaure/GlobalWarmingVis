@@ -25,34 +25,40 @@ The data was either seperated by city or by country. We used the average tempera
 
 All our visualisation fits on one web page.
 When opening the page, 14 radar charts appear in front of you. They stand for this list of forteen countries : Canada, USA, Spain, France, Sweden, Russia, Brazil, Algeria, India, China, Argentina, South Africa, Madagascar and Australia.
-<image src="img/startpage_visual.png" width="400" align="center">
 
-As you can see, we tried to pick countries localized in different part of the earth and on different continents. 
+<image src="img/startpage_visual.jpg" width="400" align="center">
+
+As you can see, we tried to pick countries localized in different parts of the earth and on different continents. 
 We have : 
-- 2 countries of North America
-- 2 countries of South America
-- 3 countries of Europe
-- 3 countries of Africa
-- 3 countries of Asia
-- 1 country of Oceania
+- 2 countries in North America
+- 2 countries in South America
+- 3 countries in Europe
+- 3 countries in Africa
+- 3 countries in Asia
+- 1 country in Oceania
 They are displayed as they would on a world map so you do not get confused and you can find your way easily.
 
-In the center, a blank space show a text saying "Move the mouse over the country you want" making sure you get that this visualisation is interactive.
-When moving your mouse over a country, you can see appearing a scatterplot chart in this big space showing the temperature of the particular country overtime.
-It offers the opportunity to see the data from another point of view. It is also bigger so you can see it in greater details.
+In the center, a blank space shows a text, which provides the user with the necessary information to understand the graphics. By saying "Move the mouse over the country you want" we are ensuring that the user does not miss out on the onteractive part of our visualization.
+When moving your mouse over a country a scatterplot chart appears in the middle of the page showing the evolution of its temperature overtime. It translates the superimposed graphes of the radar chart into a scatterplot with each point representing the temperature of the month X in the year Y. Thereby, offering the user the opportunity to see the data from another point of view and in greater detail. The y-axis scaling stays for all the countries the same in order to simplify the comparison, when changing to another country. 
+
+<image src="img/interact_visual.jpg" width="400" align="center">
+
+Finally, by clicking on the radar chart the y-axis scaling adaptes to the maximum and minimum of the country's temperatures, which enables the user to more easily detect changes and tendencies of the temperature.
+
+<image src="img/interact_2.jpg" width="400" align="center" title="bild">
+
 
 ## How does it work ?
 
 Without doing anything you can already get a lot of information. 
-In each radar chart, each branch represents a month of the year. So you can see 12 branches, numeroted from 1 to 12.
+In each radar chart, each branch represents a month of the year. So you can see 12 branches.
 Under each radar chart is written the name of the country it gets the data from.
-Each line draws the data of one year. To make it clearer, we decided to draw the oldest year in blue and the earliest one in red, going from one another in a color gradation. 
-Because it was to messy with the raw data, we decided to work a little bit on it. So every temperature of every year is drawn as the difference with the first year of the data. To make sure it is a clear explaination here is an example. If in January 1860 (first year) the temperature was of 10 degrees and the temperature in January 2010 was of 12 degrees then the visualisation will draw it as 12-10=2.
-This way the first year of every chart always equals to 0 at every month and then we draw the rest as a difference with this first year.
+Each line draws the data of one year. To be more specific, we decided to draw the oldest year in blue and the earliest one in green, gradually changing the color. 
+In a first try we ploted the the temperature of each month, but the results were to messy to extract any significant information.Therefore, we decided to introduce a the first year of the dataset as the benchmark and plot the difference of with every following year. 
+For example: If in January 1860 (first year) the was 10 degrees and in January 2010 it was 12 degrees, then the visualization will draw it as 12-10=2.
+This way the first year of every chart always equals 0 for every month and all the following years are drawn as the difference with this first year.
 
-When passing your mouse over a country, the scatter plot showing the average temperature each month of every year of this country overtime appears.
-We kept the same color code, that is to say, the oldest year in blue and a color degradation from there to the earliest year in red. It is done for you to have a better look on the raw data of temperature, bigger and in more details. It also give the information of the usual temperature of the country, whether it is a cold or a hot country.
+We kept the same color code, that is to say, the oldest year in blue and a color degradation from there to the most recent year in green. It gives the user a better look on the raw data of temperature, bigger and more detailed. Also, it gives the information about the usual temperature of the country, whether it is a cold or a hot country. However, we chose not to use the colors blue and red, because even though it is a visualization of the global warming, we decided to avoid any prejudicial choice of color. 
 
 ## Conclusion
-
-We see that global warming affects in a greater way hot countries, the best example of our sample is Brazil and we see that for Sweden or Russia it is not so obvious.
+Our visualization clearly shows that countries with a hot climate are more affected by global warming. The best example of our sample is Brazil, since throughout the seasons the temperature has gradually risen. With respect to the countries with a cold climate it becomes more difficult to determine a clear effect of global warming. However, the temperatures during the winter season vary significantly more than during the summer. Therefore, we can conclude that the the global warming affects countires from different regions differenetly.
