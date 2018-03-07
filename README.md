@@ -2,28 +2,30 @@
 ## What is it about ?
 
 With this project, we want to show the reality of global warming. A lot of visualisations already exist but our purpose was to look for a new way to present the problem. 
-The first thing is to choose not to use a classic world map like most of global warming visualisations do.
-We also want to compare a few countries in one simple visualisation and we chose a sample of countries that should show different results.
-Finally, we want to put a little bit of interaction to unable the user to see a other type of graph and better analyse the data.
+The first thing is the choice not to use a classic world map, because even though it is a convenient visualization in terms of global comparability there is a wide range of already existing global warming visualizations based on a world map.
+However, we want to keep the aspect of comparibility as a main priority. Therefore we choose a simple visualization of a sample of countries spread across the world in order to show different the results 
+Finally, we decided to offer the possibility of an interaction between user and visualiztion. We enable the user access a more detailed graph, which allows him to comprehend and analyse more easily the illustrated data.
 
 ## To what questions do we want to answer with the visualisation ?
 
-Is there discrepencies between countries regarding global warming ?
+Are there discrepencies between countries regarding global warming ?
 Which countries are more impacted ?
-Can we linked global warming to the geographic position of the country ?
+Can we link global warming to the geographic position of the country ?
 Can we explain why some countries are more impacted using our knowledge of their economic activities ?
-How fast is global warming evoluting ?
+How fast is global climate changing?
 Could we predict what will happen in the future ?
+
 
 ## Where did we get the data ?
 
 We got the data from this Kaggle link : https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/data.
-We used the average temperature per country one to keep it general rather than going in to much detail with the per city one.
+The data was either seperated by city or by country. We used the average temperature per country, mostly because prioritized a comparison of the effects on an international level rather than going into too much detail with the city-based dataset.
 
 ## What does it look like ?
 
-All our visualisation fits in one web page.
-When opening the page, 14 radar charts appear to you. They stand for this list of forteen countries : Canada, USA, Spain, France, Sweden, Russia, Brazil, Algeria, India, China, Argentina, South Africa, Madagascar and Australia.
+All our visualisation fits on one web page.
+When opening the page, 14 radar charts appear in front of you. They stand for this list of forteen countries : Canada, USA, Spain, France, Sweden, Russia, Brazil, Algeria, India, China, Argentina, South Africa, Madagascar and Australia.
+
 As you can see, we tried to pick countries localized in different part of the earth and on different continents. 
 We have : 
 - 2 countries of North America
