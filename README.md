@@ -19,6 +19,7 @@ Could we predict what will happen in the future ?
 ## Where did we get the data ?
 
 We got the data from this Kaggle link : https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/data.
+
 The data was either seperated by city or by country. We used the average temperature per country, mostly because prioritized a comparison of the effects on an international level rather than going into too much detail with the city-based dataset.
 
 ## What does it look like ?
@@ -61,4 +62,4 @@ This way the first year of every chart always equals 0 for every month and all t
 We kept the same color code, that is to say, the oldest year in blue and a color degradation from there to the most recent year in green. It gives the user a better look on the raw data of temperature, bigger and more detailed. Also, it gives the information about the usual temperature of the country, whether it is a cold or a hot country. However, we chose not to use the colors blue and red, because even though it is a visualization of the global warming, we decided to avoid any prejudicial choice of color. 
 
 ## Conclusion
-Our visualization clearly shows that countries with a hot climate are more affected by global warming. The best example of our sample is Brazil, since throughout the seasons the temperature has gradually risen. With respect to the countries with a cold climate it becomes more difficult to determine a clear effect of global warming. However, the temperatures during the winter season vary significantly more than during the summer. Therefore, we can conclude that the the global warming affects countires from different regions differenetly.
+Our visualization clearly shows that countries with a hot climate are more affected by global warming. The best example of our sample is Brazil, since throughout the seasons the temperature has gradually risen. With respect to the countries with a cold climate it becomes more difficult to determine a clear effect of global warming. However, the temperatures during the winter season vary significantly more than during the summer. Therefore, we can conclude that the the global warming affects countries from different regions differenetly.
