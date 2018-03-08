@@ -329,24 +329,24 @@
 				circles.transition().duration(1000).attr("cx",function(d){return xscale(formatDate(d.dt))})
       								.attr("cy",function(d){return yscale(d.AverageTemperature)}) ;     								
       			circles.on("mouseover",function(d){
-										d3.select(this).attr("r","5");
-										graphique.append("rect")
-											.attr("class","provisoire")
-											.attr("x",xscale(formatDate(d.dt))+10)
-											.attr("y",yscale(d.AverageTemperature)-15)
-											.attr("width",130)
-											.attr("height",20)
-											.style("fill","rgba(0,0,60,0.8)");
-										graphique.append("text")
-											.attr("class","provisoire")
-											.attr("x",xscale(formatDate(d.dt))+13)
-											.attr("y",yscale(d.AverageTemperature))
-											.text(d.dt+", "+Math.trunc(d.AverageTemperature)+"°C")
-											.style("fill","white")
-											.style("font-family", "arial")})
-      								.on("mouseleave", function(d) { 
-  										d3.select(this).transition().duration(300).attr("r","2");
-      									graphique.selectAll(".provisoire").remove();});
+					d3.select(this).attr("r","5");
+					graphique.append("rect")
+						.attr("class","provisoire")
+						.attr("x",xscale(formatDate(d.dt))+10)
+						.attr("y",yscale(d.AverageTemperature)-15)
+						.attr("width",130)
+						.attr("height",20)
+						.style("fill","rgba(0,0,60,0.8)");
+					graphique.append("text")
+						.attr("class","provisoire")
+						.attr("x",xscale(formatDate(d.dt))+13)
+						.attr("y",yscale(d.AverageTemperature))
+						.text(d.dt+", "+Math.trunc(d.AverageTemperature)+"°C")
+						.style("fill","white")
+						.style("font-family", "arial")})
+					.on("mouseleave", function(d) { 
+						d3.select(this).transition().duration(300).attr("r","2");
+						graphique.selectAll(".provisoire").remove();});
 
 			  	/*var line=d3.line()
 			  				.x(function(d){return xscale(formatDate(d.dt))})
@@ -403,7 +403,27 @@
       								.attr("fill",function(d,i){return color(i)});
 
 				circles.transition().duration(1000).attr("cx",function(d){return xscale(formatDate(d.dt))})
-      								.attr("cy",function(d){return yscale(d.AverageTemperature)})
+      								.attr("cy",function(d){return yscale(d.AverageTemperature)});
+      			circles.on("mouseover",function(d){
+					d3.select(this).attr("r","5");
+					graphique.append("rect")
+						.attr("class","provisoire")
+						.attr("x",xscale(formatDate(d.dt))+10)
+						.attr("y",yscale(d.AverageTemperature)-15)
+						.attr("width",130)
+						.attr("height",20)
+						.style("fill","rgba(0,0,60,0.8)");
+					graphique.append("text")
+						.attr("class","provisoire")
+						.attr("x",xscale(formatDate(d.dt))+13)
+						.attr("y",yscale(d.AverageTemperature))
+						.text(d.dt+", "+Math.trunc(d.AverageTemperature)+"°C")
+						.style("fill","white")
+						.style("font-family", "arial")})
+					.on("mouseleave", function(d) { 
+						d3.select(this).transition().duration(300).attr("r","2");
+						graphique.selectAll(".provisoire").remove();});
+
 
 			  	/*var line=d3.line()
 			  				.x(function(d){return xscale(formatDate(d.dt))})
