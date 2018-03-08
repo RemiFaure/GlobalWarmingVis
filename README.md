@@ -2,8 +2,11 @@
 ## What is it about ?
 
 With this project, we want to show the reality of global warming. A lot of visualisations already exist, but aimed to find a new way to present the problem. 
+
 The first thing is the choice not to use a classic world map, because even though it is a convenient visualization in terms of global comparability there is a wide range of already existing global warming visualizations based on a world map.
-However, we want to keep the aspect of comparability as a main priority. Therefore we choose a simple visualization of a sample of countries spread across the world in order to show different the results 
+
+However, we want to keep the aspect of comparability as a main priority. Therefore we choose a simple visualization of a sample of countries spread across the world in order to show different the results.
+
 Finally, we decided to offer the possibility of an interaction between user and visualization. We enable the user access a more detailed graph, which allows him to comprehend and analyse more easily the illustrated data.
 
 ## To what questions do we want to answer with the visualisation ?
