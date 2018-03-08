@@ -32,6 +32,8 @@ The data was either separated by city or by country. We used the average tempera
 
 ## What does it look like ?
 
+A presentation video has been made and sent to Vimeo, here's the link : https://vimeo.com/259178065
+
 All our visualisation fits on one web page.
 When opening the page, 14 radar charts appear in front of you. They stand for this list of 14 countries : Canada, USA, Spain, France, Sweden, Russia, Brazil, Algeria, India, China, Argentina, South Africa, Madagascar and Australia.
 
