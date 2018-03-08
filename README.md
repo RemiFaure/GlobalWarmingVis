@@ -29,6 +29,15 @@ Could we predict what will happen in the future ?
 We got the data from this Kaggle link : https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/data.
 
 The data was either separated by city or by country. We used the average temperature per country, mostly because we prioritized a comparison of the effects on an international level rather than going into too much detail with the city-based dataset.
+In a next step we preprocessed the data. The main reason for this measure were missing values in the dataset and to reduce its size. With the data analysis software Rstudio we filtered out a sample of countries. Furthermore, we removed all the missing values together with their corresponding year. Because of these modifications we were able to considerably reduce the size of the data set ( [Code](https://github.com/RemiFaure/GlobalWarmingVis/blob/master/data/Traitement%20data.R)): 
+
+| Data set | Observations |
+| --- | --- |
+| Initial data set | 577462 |
+| Sample data set | 36291 |
+| Cleansed sample set| 24264 |
+
+
 
 ## What does it look like ?
 
